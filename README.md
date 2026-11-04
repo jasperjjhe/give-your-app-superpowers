@@ -3,7 +3,7 @@
 Starter repo for the **HackCamp 2026 AI APIs workshop** by nwPlus.
 
 You'll build a tiny **meal idea generator**: type the ingredients in your fridge, and the Gemini API suggests a dinner.
-It's plain **HTML, CSS and JavaScript** in the browser, plus a small **Node.js** server that keeps your API key secret.
+It's plain **HTML, CSS and JavaScript** in the browser (no React, no frameworks, no build step: just what you learned in *Make It Exist!*), plus a small **Node.js** server that keeps your API key secret. The server is JavaScript too, it just runs on your laptop instead of in the browser.
 
 ```
 Browser (public/)  --POST /api/meal-->  Server (server.js)  --POST-->  Gemini API

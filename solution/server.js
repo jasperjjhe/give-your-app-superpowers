@@ -61,8 +61,7 @@ async function askGemini(prompt) {
     throw await geminiError(response);
   }
   const data = await response.json();
-  const answer = data.candidates?.[0]
-    ?.content?.parts?.[0]?.text;
+  const answer = data.candidates[0].content.parts[0].text;
   if (!answer) {
     throw new Error("Gemini replied, but there was no text in the answer.");
   }
