@@ -53,7 +53,7 @@ async function askGemini(prompt) {
   const data = await response.___(); // turn the JSON text into a JavaScript object
   const answer = data.candidates[0].content.parts[0].text;
   if (!answer) {
-    throw new Error("Gemini replied, but there was no text in the answer.");
+    throw new Error("Gemini sent back no text.");
   }
   return answer;
 }
@@ -77,7 +77,7 @@ async function geminiError(response) {
   let detail = "";
   try {
     const body = await response.json();
-    detail = body.error?.message || "";
+    detail = (body.error && body.error.message) || "";
   } catch {
     // the error body wasn't JSON; that's fine
   }
