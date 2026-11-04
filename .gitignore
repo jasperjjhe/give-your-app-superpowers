@@ -1,0 +1,5 @@
+# Your secret API key lives here. Never commit it!
+.env
+
+node_modules/
+.DS_Store

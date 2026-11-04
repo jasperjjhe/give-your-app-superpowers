@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's for dinner?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">HackCamp 2026 · Give Your App Superpowers!</p>
+    <h1>What's for dinner? 🍲</h1>
+    <p class="lede">Tell me what's in your fridge. Gemini will suggest a meal.</p>
+
+    <form id="meal-form">
+      <label for="ingredients">Ingredients</label>
+      <input id="ingredients" name="ingredients" placeholder="chickpeas, spinach, rice" required />
+
+      <label for="minutes">Time I have</label>
+      <select id="minutes" name="minutes">
+        <option value="10">10 minutes</option>
+        <option value="20" selected>20 minutes</option>
+        <option value="40">40 minutes</option>
+      </select>
+
+      <button id="submit" type="submit">Give me an idea ✨</button>
+    </form>
+
+    <section id="result" class="result" hidden>
+      <h2 id="meal-name"></h2>
+      <pre id="meal-text"></pre>
+    </section>
+    <p id="error" class="error" hidden></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

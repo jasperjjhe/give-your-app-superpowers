@@ -1,0 +1,15 @@
+{
+  "name": "give-your-app-superpowers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HackCamp 2026 workshop starter: an AI meal idea generator built with plain HTML, CSS, JavaScript and the Gemini API.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node check-setup.js",
+    "solution": "node solution/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
